@@ -71,7 +71,10 @@
   height: 28px;
   width: 28px;
   display: block;
-  background: red;
+  font-size:20px;
+  text-align:center;
+  line-height:28px;
+  cursor:pointer;
 }
 .top-banner .small-menu .menu-list {
   display: none;
@@ -87,9 +90,9 @@
 .top-banner .small-menu .menu-list a {
   display: block;
   padding: 10px 15px;
-  color: #303030;
+  color: #fff;
   width: 100%;
-  background: #eee;
+  background:rgba(255,255,254,.5);
   border-bottom: 1px solid #d8d8d8;
 }
 .top-banner .big-menu {
@@ -197,6 +200,9 @@
   }
   .h-menu {
     margin-top: 20px;
+  }
+  #test{
+    display:none;
   }
 }
 @media screen and (max-width: 768px) {
