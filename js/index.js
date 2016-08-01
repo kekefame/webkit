@@ -163,4 +163,27 @@ $(function(){
         $(this).toggleClass("active");
     })
 
+});
+$(function(){
+    var audio=document.querySelector("audio");
+    var play=document.querySelector(".website-audio");
+    if(audio.duration==audio.currentTime){
+        alert(1);
+        audio.load();
+        audio.play();
+    }
+    else
+    {
+        play.onclick=function()
+        {
+            if (audio.paused)
+            {
+                audio.play();
+            }
+            else{
+                audio.pause();
+            }
+        }
+    }
+
 })
